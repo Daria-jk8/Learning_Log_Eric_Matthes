@@ -8,6 +8,8 @@
  - ....
 -------
 ## Result :
+-------
+##  ACTION PLAN:
 ```bash
 python3 -m venv ll_env
 source ll_env/bin/activate
