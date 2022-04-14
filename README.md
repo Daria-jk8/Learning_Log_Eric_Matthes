@@ -43,3 +43,42 @@ python manage.py makemigrations learning_logs
 ### add info to urls.py path('', include('learning_logs.urls'))
 ### create new file urls.py in the app, and add info 
 ## add files to folder templates
+# --> start chapter 19:
+- create forms.py for topic, entry
+- urls.py --> new_topic, new_entry
+- views.py --> new_topic, new_entry
+- html --> create new_topic, new_entry 
+- html --> topics - add href a new topic, topic - add href a new entry
+- urls.py --> edit_entry
+- views.py --> create def edit_entry
+- html --> create edit_entry
+- html --> topic - add href a edit_entry
+### CREATE user`s page
+```bash
+python manage.py startapp users 
+```
+### settings.py - add to APPS - 'users'
+### urls.py - add 'users.urls'
+- create new file in users: urls.py and add info
+- create new folders templates, registration
+- html - login, logged_out
+### create PAGE FOR registration
+- urls.py  - add register
+- vies.py - create def register
+- html - create register.html
+- add href to register in  base.html
+### data editing with decorators @login_required
+- add learning_logs - views.py -@login_required
+- settings.py - add LOGIN_URL = '/users/login/'
+- add learning_logs - models.py --> User
+```bash
+python manage.py shell
+>>> from django.contrib.auth.models import User 
+>>> User.objects.all()
+>>> for user in User.objects.all():
+...   print(user.username, user.id)
+>>> exit()
+python manage.py makemigrations learning_logs
+>>> 1
+>>> 1
+python manage.py migrate
