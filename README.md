@@ -8,6 +8,8 @@
  - ....
 -------
 ## Result :
+-------
+##  ACTION PLAN:
 ```bash
 python3 -m venv ll_env
 source ll_env/bin/activate
@@ -43,6 +45,7 @@ python manage.py makemigrations learning_logs
 ### add info to urls.py path('', include('learning_logs.urls'))
 ### create new file urls.py in the app, and add info 
 ## add files to folder templates
+<<<<<<< HEAD
 # --> start chapter 19:
 - create forms.py for topic, entry
 - urls.py --> new_topic, new_entry
@@ -82,3 +85,5 @@ python manage.py makemigrations learning_logs
 >>> 1
 >>> 1
 python manage.py migrate
+=======
+>>>>>>> 497dc63f40e0af7ff6e1cd5e32dab1c8093b71d7
