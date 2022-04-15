@@ -4,8 +4,8 @@
 --------
 ## Project 3  :fire: --> Learning Log
 -------
- - Python, Django
- - ....
+ - Python, Django, app, URL, .html, bootstrap4, Heroku
+ - topic, entry...
 -------
 ## Result :
 -------
